@@ -1,0 +1,128 @@
+langcode: hu
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_content_tags
+field_name: field_content_tags
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Atya
+      label: Atya
+    -
+      value: áldás
+      label: áldás
+    -
+      value: bátorítás
+      label: bátorítás
+    -
+      value: békesség
+      label: békesség
+    -
+      value: 'bizalom Istenben'
+      label: 'bizalom Istenben'
+    -
+      value: bűnbánat
+      label: bűnbánat
+    -
+      value: elhívás-küldetés
+      label: elhívás-küldetés
+    -
+      value: evangélium
+      label: evangélium
+    -
+      value: feltámadás
+      label: feltámadás
+    -
+      value: gondviselés
+      label: gondviselés
+    -
+      value: győzelem
+      label: győzelem
+    -
+      value: hálaadás
+      label: hálaadás
+    -
+      value: hitvallás
+      label: hitvallás
+    -
+      value: hívás
+      label: hívás
+    -
+      value: imádat
+      label: imádat
+    -
+      value: 'Isten tulajdonságai'
+      label: 'Isten tulajdonságai'
+    -
+      value: Jézus
+      label: Jézus
+    -
+      value: kegyelem
+      label: kegyelem
+    -
+      value: közbenjárás
+      label: közbenjárás
+    -
+      value: megtérés
+      label: megtérés
+    -
+      value: mennyország
+      label: mennyország
+    -
+      value: Mindenható
+      label: Mindenható
+    -
+      value: oltalom
+      label: oltalom
+    -
+      value: örvendezés
+      label: örvendezés
+    -
+      value: passió
+      label: passió
+    -
+      value: reménység
+      label: reménység
+    -
+      value: szabadítás
+      label: szabadítás
+    -
+      value: Szentírás
+      label: Szentírás
+    -
+      value: Szentlélek
+      label: Szentlélek
+    -
+      value: szentség
+      label: szentség
+    -
+      value: szeretet
+      label: szeretet
+    -
+      value: Szentháromság
+      label: Szentháromság
+    -
+      value: 'teremtett világ'
+      label: 'teremtett világ'
+    -
+      value: 'várakozás Istenre'
+      label: 'várakozás Istenre'
+    -
+      value: vezetés
+      label: vezetés
+    -
+      value: visszajövetel
+      label: visszajövetel
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

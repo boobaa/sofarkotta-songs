@@ -1,0 +1,17 @@
+{
+    "name": "boobaa/sofarkotta-songs",
+    "description": "A recipe for Sofarkotta songs: the content type, an editorial and a block view, and a simple API using core modules only.",
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "CSÉCSY László",
+            "homepage": "https://csecsy.hu",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "drupal/field_group": "^4.0"
+    }
+}
+

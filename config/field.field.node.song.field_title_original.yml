@@ -1,0 +1,18 @@
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title_original
+    - node.type.song
+id: node.song.field_title_original
+field_name: field_title_original
+entity_type: node
+bundle: song
+label: 'Cím (eredeti)'
+description: 'A dal címe, eredeti nyelven (külföldi dal esetén).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

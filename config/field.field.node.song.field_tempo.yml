@@ -1,0 +1,20 @@
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tempo
+    - node.type.song
+  module:
+    - options
+id: node.song.field_tempo
+field_name: field_tempo
+entity_type: node
+bundle: song
+label: Tempó
+description: 'Általában milyen tempóban játsszuk?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

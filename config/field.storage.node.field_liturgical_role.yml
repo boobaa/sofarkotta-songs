@@ -1,0 +1,50 @@
+langcode: hu
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_liturgical_role
+field_name: field_liturgical_role
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: kezdoenek
+      label: kezdőének
+    -
+      value: foenek
+      label: főének
+    -
+      value: konyorges
+      label: könyörgés
+    -
+      value: invokacio
+      label: invokáció
+    -
+      value: keresztelo
+      label: keresztelő
+    -
+      value: urvacsora
+      label: úrvacsora
+    -
+      value: zaroenek
+      label: záróének
+    -
+      value: asztali_aldas
+      label: 'asztali áldás'
+    -
+      value: reggel
+      label: reggel
+    -
+      value: este
+      label: este
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

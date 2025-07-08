@@ -1,0 +1,18 @@
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_editorial_notes
+    - node.type.song
+id: node.song.field_editorial_notes
+field_name: field_editorial_notes
+entity_type: node
+bundle: song
+label: 'Szerkesztői megjegyzések'
+description: 'Csak szerkesztéskor látszik.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

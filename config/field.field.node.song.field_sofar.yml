@@ -1,0 +1,20 @@
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sofar
+    - node.type.song
+  module:
+    - options
+id: node.song.field_sofar
+field_name: field_sofar
+entity_type: node
+bundle: song
+label: Sófár
+description: 'Dicsőítő Iskola év/helyszín - ahol megjelent az ének.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

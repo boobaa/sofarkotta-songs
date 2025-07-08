@@ -1,0 +1,20 @@
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_tags
+    - node.type.song
+  module:
+    - options
+id: node.song.field_content_tags
+field_name: field_content_tags
+entity_type: node
+bundle: song
+label: Tartalomcímkék
+description: "Ha egyik címkét sem jelölöd ki, de megadtál OpenSong szöveget, akkor az alapján egy AI megpróbálja kitalálni, milyen címkék írják le a szöveget. Emiatt a mentéskor többet kell várnod, légy türelemmel!<br>\r\nHa kijelöltél legalább egy címkét, vagy nem adtál meg OpenSong szöveget, akkor az AI-nak nincs dolga, így a mentés is gyors."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

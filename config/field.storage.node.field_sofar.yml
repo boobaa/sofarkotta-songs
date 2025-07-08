@@ -1,0 +1,74 @@
+langcode: hu
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_sofar
+field_name: field_sofar
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '2008'
+      label: '2008 - Sárospatak'
+    -
+      value: '2009'
+      label: '2009 - Sárospatak'
+    -
+      value: '2010'
+      label: '2010 - Szentes'
+    -
+      value: '2011'
+      label: '2011 - Pápa'
+    -
+      value: '2012'
+      label: '2012 - Nagykőrös'
+    -
+      value: '2013'
+      label: '2013 - Győr'
+    -
+      value: '2014'
+      label: '2014 - Kiskunfélegyháza'
+    -
+      value: '2015'
+      label: '2015 - Tokaj'
+    -
+      value: '2016'
+      label: '2016 - Balatonfűzfő'
+    -
+      value: '2017'
+      label: '2017 - Kecskemét'
+    -
+      value: '2018'
+      label: '2018 - Szeged'
+    -
+      value: '2019'
+      label: '2019 - Pécs'
+    -
+      value: '2020'
+      label: '2020 - Ott ahol vagy'
+    -
+      value: '2021'
+      label: '2021 - Miskolc'
+    -
+      value: '2022'
+      label: '2022 - Kiskunfélegyháza'
+    -
+      value: '2023'
+      label: '2023 - Miskolc'
+    -
+      value: '2024'
+      label: '2024 - Bonyhád'
+    -
+      value: '2025'
+      label: '2025 - Bonyhád'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

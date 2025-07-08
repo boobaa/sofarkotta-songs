@@ -1,0 +1,20 @@
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_holiday
+    - node.type.song
+  module:
+    - options
+id: node.song.field_holiday
+field_name: field_holiday
+entity_type: node
+bundle: song
+label: Ünnep
+description: 'Kapcsolódó ünnepkör / esemény.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

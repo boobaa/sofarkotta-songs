@@ -1,0 +1,26 @@
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_svg
+    - node.type.song
+  module:
+    - file
+id: node.song.field_svg
+field_name: field_svg
+entity_type: node
+bundle: song
+label: SVG
+description: 'Mobilalkalmazás számára.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: svg
+  max_filesize: ''
+  description_field: false
+field_type: file

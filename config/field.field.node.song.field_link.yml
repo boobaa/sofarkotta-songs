@@ -1,0 +1,22 @@
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.song
+  module:
+    - link
+id: node.song.field_link
+field_name: field_link
+entity_type: node
+bundle: song
+label: Link
+description: 'Youtube / Spotify / egyéb zenei megosztó; az eredeti előadó és/vagy a Sófáros felvételt töltsd fel!'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

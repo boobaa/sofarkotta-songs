@@ -1,0 +1,18 @@
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bible_ref
+    - node.type.song
+id: node.song.field_bible_ref
+field_name: field_bible_ref
+entity_type: node
+bundle: song
+label: Igeszakasz
+description: 'Kapcsolódó / feldolgozott igeszakasz (ha van), pl. <strong>2Móz 20,2-17</strong>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

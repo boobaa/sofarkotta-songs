@@ -1,0 +1,33 @@
+langcode: hu
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_ambitus
+field_name: field_ambitus
+entity_type: node
+type: list_float
+settings:
+  allowed_values:
+    -
+      value: 1.0
+      label: 'egy oktáv'
+    -
+      value: 1.5
+      label: 'másfél oktáv'
+    -
+      value: 2.0
+      label: 'két oktáv'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

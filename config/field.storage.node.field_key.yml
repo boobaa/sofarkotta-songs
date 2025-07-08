@@ -1,0 +1,452 @@
+langcode: hu
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_key
+field_name: field_key
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: C-dur
+      label: C-dúr
+    -
+      value: Cis/Des-dur
+      label: Cis/Des-dúr
+    -
+      value: D-dur
+      label: D-dúr
+    -
+      value: Dis/Es-dur
+      label: Dis/Es-dúr
+    -
+      value: E-dur
+      label: E-dúr
+    -
+      value: F-dur
+      label: F-dúr
+    -
+      value: Fis/Ges-dur
+      label: Fis/Ges-dúr
+    -
+      value: G-dur
+      label: G-dúr
+    -
+      value: Gis/As-dur
+      label: Gis/As-dúr
+    -
+      value: A-dur
+      label: A-dúr
+    -
+      value: B-dur
+      label: B-dúr
+    -
+      value: H-dur
+      label: H-dúr
+    -
+      value: C-moll
+      label: C-moll
+    -
+      value: Cis/Des-moll
+      label: Cis/Des-moll
+    -
+      value: D-moll
+      label: D-moll
+    -
+      value: Dis/Es-moll
+      label: Dis/Es-moll
+    -
+      value: E-moll
+      label: E-moll
+    -
+      value: F-moll
+      label: F-moll
+    -
+      value: Fis/Ges-moll
+      label: Fis/Ges-moll
+    -
+      value: G-moll
+      label: G-moll
+    -
+      value: Gis/As-moll
+      label: Gis/As-moll
+    -
+      value: A-moll
+      label: A-moll
+    -
+      value: B-moll
+      label: B-moll
+    -
+      value: H-moll
+      label: H-moll
+    -
+      value: C-dor
+      label: C-dór
+    -
+      value: Cis/Des-dor
+      label: Cis/Des-dór
+    -
+      value: D-dor
+      label: D-dór
+    -
+      value: Dis/Es-dor
+      label: Dis/Es-dór
+    -
+      value: E-dor
+      label: E-dór
+    -
+      value: F-dor
+      label: F-dór
+    -
+      value: Fis/Ges-dor
+      label: Fis/Ges-dór
+    -
+      value: G-dor
+      label: G-dór
+    -
+      value: Gis/As-dor
+      label: Gis/As-dór
+    -
+      value: A-dor
+      label: A-dór
+    -
+      value: B-dor
+      label: B-dór
+    -
+      value: H-dor
+      label: H-dór
+    -
+      value: C-frig
+      label: C-fríg
+    -
+      value: Cis/Des-frig
+      label: Cis/Des-fríg
+    -
+      value: D-frig
+      label: D-fríg
+    -
+      value: Dis/Es-frig
+      label: Dis/Es-fríg
+    -
+      value: E-frig
+      label: E-fríg
+    -
+      value: F-frig
+      label: F-fríg
+    -
+      value: Fis/Ges-frig
+      label: Fis/Ges-fríg
+    -
+      value: G-frig
+      label: G-fríg
+    -
+      value: Gis/As-frig
+      label: Gis/As-fríg
+    -
+      value: A-frig
+      label: A-fríg
+    -
+      value: B-frig
+      label: B-fríg
+    -
+      value: H-frig
+      label: H-fríg
+    -
+      value: C-lid
+      label: C-líd
+    -
+      value: Cis/Des-lid
+      label: Cis/Des-líd
+    -
+      value: D-lid
+      label: D-líd
+    -
+      value: Dis/Es-lid
+      label: Dis/Es-líd
+    -
+      value: E-lid
+      label: E-líd
+    -
+      value: F-lid
+      label: F-líd
+    -
+      value: Fis/Ges-lid
+      label: Fis/Ges-líd
+    -
+      value: G-lid
+      label: G-líd
+    -
+      value: Gis/As-lid
+      label: Gis/As-líd
+    -
+      value: A-lid
+      label: A-líd
+    -
+      value: B-lid
+      label: B-líd
+    -
+      value: H-lid
+      label: H-líd
+    -
+      value: C-mixolid
+      label: C-mixolíd
+    -
+      value: Cis/Des-mixolid
+      label: Cis/Des-mixolíd
+    -
+      value: D-mixolid
+      label: D-mixolíd
+    -
+      value: Dis/Es-mixolid
+      label: Dis/Es-mixolíd
+    -
+      value: E-mixolid
+      label: E-mixolíd
+    -
+      value: F-mixolid
+      label: F-mixolíd
+    -
+      value: Fis/Ges-mixolid
+      label: Fis/Ges-mixolíd
+    -
+      value: G-mixolid
+      label: G-mixolíd
+    -
+      value: Gis/As-mixolid
+      label: Gis/As-mixolíd
+    -
+      value: A-mixolid
+      label: A-mixolíd
+    -
+      value: B-mixolid
+      label: B-mixolíd
+    -
+      value: H-mixolid
+      label: H-mixolíd
+    -
+      value: C-harmonikus_moll
+      label: 'C-harmonikus moll'
+    -
+      value: Cis/Des-harmonikus_moll
+      label: 'Cis/Des-harmonikus moll'
+    -
+      value: D-harmonikus_moll
+      label: 'D-harmonikus moll'
+    -
+      value: Dis/Es-harmonikus_moll
+      label: 'Dis/Es-harmonikus moll'
+    -
+      value: E-harmonikus_moll
+      label: 'E-harmonikus moll'
+    -
+      value: F-harmonikus_moll
+      label: 'F-harmonikus moll'
+    -
+      value: Fis/Ges-harmonikus_moll
+      label: 'Fis/Ges-harmonikus moll'
+    -
+      value: G-harmonikus_moll
+      label: 'G-harmonikus moll'
+    -
+      value: Gis/As-harmonikus_moll
+      label: 'Gis/As-harmonikus moll'
+    -
+      value: A-harmonikus_moll
+      label: 'A-harmonikus moll'
+    -
+      value: B-harmonikus_moll
+      label: 'B-harmonikus moll'
+    -
+      value: H-harmonikus_moll
+      label: 'H-harmonikus moll'
+    -
+      value: C-harmonikus_moll_iv
+      label: 'C-harmonikus moll IV'
+    -
+      value: Cis/Des-harmonikus_moll_iv
+      label: 'Cis/Des-harmonikus moll IV'
+    -
+      value: D-harmonikus_moll_iv
+      label: 'D-harmonikus moll IV'
+    -
+      value: Dis/Es-harmonikus_moll_iv
+      label: 'Dis/Es-harmonikus moll IV'
+    -
+      value: E-harmonikus_moll_iv
+      label: 'E-harmonikus moll IV'
+    -
+      value: F-harmonikus_moll_iv
+      label: 'F-harmonikus moll IV'
+    -
+      value: Fis/Ges-harmonikus_moll_iv
+      label: 'Fis/Ges-harmonikus moll IV'
+    -
+      value: G-harmonikus_moll_iv
+      label: 'G-harmonikus moll IV'
+    -
+      value: Gis/As-harmonikus_moll_iv
+      label: 'Gis/As-harmonikus moll IV'
+    -
+      value: A-harmonikus_moll_iv
+      label: 'A-harmonikus moll IV'
+    -
+      value: B-harmonikus_moll_iv
+      label: 'B-harmonikus moll IV'
+    -
+      value: H-harmonikus_moll_iv
+      label: 'H-harmonikus moll IV'
+    -
+      value: C-harmonikus_moll_v
+      label: 'C-harmonikus moll V'
+    -
+      value: Cis/Des-harmonikus_moll_v
+      label: 'Cis/Des-harmonikus moll V'
+    -
+      value: D-harmonikus_moll_v
+      label: 'D-harmonikus moll V'
+    -
+      value: Dis/Es-harmonikus_moll_v
+      label: 'Dis/Es-harmonikus moll V'
+    -
+      value: E-harmonikus_moll_v
+      label: 'E-harmonikus moll V'
+    -
+      value: F-harmonikus_moll_v
+      label: 'F-harmonikus moll V'
+    -
+      value: Fis/Ges-harmonikus_moll_v
+      label: 'Fis/Ges-harmonikus moll V'
+    -
+      value: G-harmonikus_moll_v
+      label: 'G-harmonikus moll V'
+    -
+      value: Gis/As-harmonikus_moll_v
+      label: 'Gis/As-harmonikus moll V'
+    -
+      value: A-harmonikus_moll_v
+      label: 'A-harmonikus moll V'
+    -
+      value: B-harmonikus_moll_v
+      label: 'B-harmonikus moll V'
+    -
+      value: H-harmonikus_moll_v
+      label: 'H-harmonikus moll V'
+    -
+      value: C-magyar_moll
+      label: 'C-magyar moll'
+    -
+      value: Cis/Des-magyar_moll
+      label: 'Cis/Des-magyar moll'
+    -
+      value: D-magyar_moll
+      label: 'D-magyar moll'
+    -
+      value: Dis/Es-magyar_moll
+      label: 'Dis/Es-magyar moll'
+    -
+      value: E-magyar_moll
+      label: 'E-magyar moll'
+    -
+      value: F-magyar_moll
+      label: 'F-magyar moll'
+    -
+      value: Fis/Ges-magyar_moll
+      label: 'Fis/Ges-magyar moll'
+    -
+      value: G-magyar_moll
+      label: 'G-magyar moll'
+    -
+      value: Gis/As-magyar_moll
+      label: 'Gis/As-magyar moll'
+    -
+      value: A-magyar_moll
+      label: 'A-magyar moll'
+    -
+      value: B-magyar_moll
+      label: 'B-magyar moll'
+    -
+      value: H-magyar_moll
+      label: 'H-magyar moll'
+    -
+      value: C-eol
+      label: C-eol
+    -
+      value: Cis/Des-eol
+      label: Cis/Des-eol
+    -
+      value: D-eol
+      label: D-eol
+    -
+      value: Dis/Es-eol
+      label: Dis/Es-eol
+    -
+      value: E-eol
+      label: E-eol
+    -
+      value: F-eol
+      label: F-eol
+    -
+      value: Fis/Ges-eol
+      label: Fis/Ges-eol
+    -
+      value: G-eol
+      label: G-eol
+    -
+      value: Gis/As-eol
+      label: Gis/As-eol
+    -
+      value: A-eol
+      label: A-eol
+    -
+      value: B-eol
+      label: B-eol
+    -
+      value: H-eol
+      label: H-eol
+    -
+      value: C-lokriszi
+      label: C-lokriszi
+    -
+      value: Cis/Des-lokriszi
+      label: Cis/Des-lokriszi
+    -
+      value: D-lokriszi
+      label: D-lokriszi
+    -
+      value: Dis/Es-lokriszi
+      label: Dis/Es-lokriszi
+    -
+      value: E-lokriszi
+      label: E-lokriszi
+    -
+      value: F-lokriszi
+      label: F-lokriszi
+    -
+      value: Fis/Ges-lokriszi
+      label: Fis/Ges-lokriszi
+    -
+      value: G-lokriszi
+      label: G-lokriszi
+    -
+      value: Gis/As-lokriszi
+      label: Gis/As-lokriszi
+    -
+      value: A-lokriszi
+      label: A-lokriszi
+    -
+      value: B-lokriszi
+      label: B-lokriszi
+    -
+      value: H-lokriszi
+      label: H-lokriszi
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

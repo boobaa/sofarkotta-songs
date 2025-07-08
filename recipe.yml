@@ -1,0 +1,47 @@
+name: 'Sofarkotta Songs'
+description: 'Provides the content type and views for Sofarkotta.'
+type: 'Content type'
+install:
+  - field_group
+  - file
+  - link
+  - menu_ui
+  - node
+  - options
+  - rest
+  - serialization
+  - text
+  - user
+  - views
+config:
+  import:
+    text:
+      - text.settings
+    node: '*'
+    file: '*'
+    views: '*'
+  strict:
+    - field.storage.node.field_pdf
+    - field.storage.node.field_lyricist
+    - field.storage.node.field_source
+    - field.storage.node.field_ambitus
+    - field.storage.node.field_svg
+    - field.storage.node.field_variation_of
+    - field.storage.node.field_holiday
+    - field.storage.node.field_ref_songbook
+    - field.storage.node.field_content_tags
+    - field.storage.node.field_link
+    - field.storage.node.field_title_original
+    - field.storage.node.field_liturgical_role
+    - field.storage.node.field_language
+    - field.storage.node.field_opensong
+    - field.storage.node.field_key
+    - field.storage.node.field_year
+    - field.storage.node.field_genre
+    - field.storage.node.field_editorial_notes
+    - field.storage.node.field_tempo
+    - field.storage.node.field_sofar
+    - field.storage.node.field_composer
+    - field.storage.node.field_presentation
+    - field.storage.node.field_translator
+    - field.storage.node.field_bible_ref

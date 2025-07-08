@@ -1,0 +1,21 @@
+langcode: hu
+status: true
+dependencies:
+  config:
+    - node.type.song
+id: node.song.status
+field_name: status
+entity_type: node
+bundle: song
+label: Közzétéve
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Be
+  off_label: Ki
+field_type: boolean

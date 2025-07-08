@@ -1,0 +1,54 @@
+langcode: hu
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_genre
+field_name: field_genre
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: angolszász
+      label: angolszász
+    -
+      value: himnusz
+      label: himnusz
+    -
+      value: 'folk - magyar'
+      label: 'folk - magyar'
+    -
+      value: 'folk - ír'
+      label: 'folk - ír'
+    -
+      value: 'folk - héber'
+      label: 'folk - héber'
+    -
+      value: 'folk - cigány'
+      label: 'folk - cigány'
+    -
+      value: spirituálé/gospel
+      label: spirituálé/gospel
+    -
+      value: meditatív
+      label: meditatív
+    -
+      value: gyerekdal
+      label: gyerekdal
+    -
+      value: egyéb
+      label: egyéb
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

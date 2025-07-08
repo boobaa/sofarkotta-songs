@@ -1,0 +1,18 @@
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_opensong
+    - node.type.song
+id: node.song.field_opensong
+field_name: field_opensong
+entity_type: node
+bundle: song
+label: 'OpenSong szöveg'
+description: 'A dalszöveg, OpenSong formátumban. (Ne a teljes XML-t másold ide, csak a <em>&lt;lyric&gt;</em> tag tartalmát!)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

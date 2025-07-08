@@ -1,0 +1,20 @@
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ambitus
+    - node.type.song
+  module:
+    - options
+id: node.song.field_ambitus
+field_name: field_ambitus
+entity_type: node
+bundle: song
+label: Hangterjedelem
+description: 'Ének hangterjedelme legfeljebb.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_float

@@ -1,0 +1,26 @@
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_source
+    - node.type.song
+  module:
+    - file
+id: node.song.field_source
+field_name: field_source
+entity_type: node
+bundle: song
+label: Forrásfájl
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'msc mscz mxml xml ly'
+  max_filesize: ''
+  description_field: false
+field_type: file
