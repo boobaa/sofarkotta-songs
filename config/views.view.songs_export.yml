@@ -20,6 +20,7 @@ dependencies:
     - field.storage.node.field_sofar
     - field.storage.node.field_svg
     - field.storage.node.field_tempo
+    - field.storage.node.field_time
     - field.storage.node.field_title_original
     - field.storage.node.field_translator
     - field.storage.node.field_year
@@ -629,6 +630,68 @@ display:
           settings:
             thousand_separator: ''
             prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_time:
+          id: field_time
+          table: node__field_time
+          field: field_time
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_key
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1980,6 +2043,9 @@ display:
             field_year:
               alias: year
               raw_output: false
+            field_time:
+              alias: time
+              raw_output: false
             field_composer:
               alias: composer
               raw_output: false
@@ -1994,6 +2060,9 @@ display:
               raw_output: false
             field_bible_ref:
               alias: bible_ref
+              raw_output: false
+            field_link:
+              alias: link
               raw_output: false
             field_liturgical_role:
               alias: liturgical_role
@@ -2033,9 +2102,6 @@ display:
               raw_output: false
             uuid_1:
               alias: variation_of
-              raw_output: false
-            field_link:
-              alias: link
               raw_output: false
             field_presentation:
               alias: presentation
@@ -2089,6 +2155,7 @@ display:
         - 'config:field.storage.node.field_sofar'
         - 'config:field.storage.node.field_svg'
         - 'config:field.storage.node.field_tempo'
+        - 'config:field.storage.node.field_time'
         - 'config:field.storage.node.field_title_original'
         - 'config:field.storage.node.field_translator'
         - 'config:field.storage.node.field_year'

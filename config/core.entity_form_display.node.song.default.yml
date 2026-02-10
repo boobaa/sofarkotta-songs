@@ -23,6 +23,7 @@ dependencies:
     - field.field.node.song.field_source
     - field.field.node.song.field_svg
     - field.field.node.song.field_tempo
+    - field.field.node.song.field_time
     - field.field.node.song.field_title_original
     - field.field.node.song.field_translator
     - field.field.node.song.field_variation_of
@@ -44,6 +45,7 @@ third_party_settings:
         - field_language
         - field_translator
         - field_year
+        - field_time
       label: 'Alap adatok'
       region: content
       parent_name: ''
@@ -155,7 +157,7 @@ content:
     third_party_settings: {  }
   field_composer:
     type: string_textfield
-    weight: 8
+    weight: 4
     region: content
     settings:
       size: 60
@@ -195,7 +197,7 @@ content:
     third_party_settings: {  }
   field_language:
     type: options_select
-    weight: 10
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -215,7 +217,7 @@ content:
     third_party_settings: {  }
   field_lyricist:
     type: string_textfield
-    weight: 9
+    weight: 5
     region: content
     settings:
       size: 60
@@ -278,6 +280,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_time:
+    type: options_select
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_title_original:
     type: string_textfield
     weight: 3
@@ -288,7 +296,7 @@ content:
     third_party_settings: {  }
   field_translator:
     type: string_textfield
-    weight: 11
+    weight: 7
     region: content
     settings:
       size: 60
@@ -306,7 +314,7 @@ content:
     third_party_settings: {  }
   field_year:
     type: number
-    weight: 12
+    weight: 8
     region: content
     settings:
       placeholder: ''
@@ -317,14 +325,6 @@ content:
     region: content
     settings:
       include_locked: true
-    third_party_settings: {  }
-  moderation_state:
-    type: string_textfield
-    weight: 31
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   promote:
     type: boolean_checkbox

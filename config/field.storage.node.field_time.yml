@@ -1,0 +1,113 @@
+langcode: hu
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_time
+field_name: field_time
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: kr_e_10
+      label: 'Kr. e. 10. évezred'
+    -
+      value: kr_e_9
+      label: 'Kr. e. 9. évezred'
+    -
+      value: kr_e_8
+      label: 'Kr. e. 8. évezred'
+    -
+      value: kr_e_7
+      label: 'Kr. e. 7. évezred'
+    -
+      value: kr_e_6
+      label: 'Kr. e. 6. évezred'
+    -
+      value: kr_e_5
+      label: 'Kr. e. 5. évezred'
+    -
+      value: kr_e_4
+      label: 'Kr. e. 4. évezred'
+    -
+      value: kr_e_3
+      label: 'Kr. e. 3. évezred'
+    -
+      value: kr_e_2
+      label: 'Kr. e. 2. évezred'
+    -
+      value: kr_e_1
+      label: 'Kr. e. 1. évezred'
+    -
+      value: kr_u_1
+      label: 'Kr. u. 1. század'
+    -
+      value: kr_u_2
+      label: 'Kr. u. 2. század'
+    -
+      value: kr_u_3
+      label: 'Kr. u. 3. század'
+    -
+      value: kr_u_4
+      label: 'Kr. u. 4. század'
+    -
+      value: kr_u_5
+      label: 'Kr. u. 5. század'
+    -
+      value: kr_u_6
+      label: 'Kr. u. 6. század'
+    -
+      value: kr_u_7
+      label: 'Kr. u. 7. század'
+    -
+      value: kr_u_8
+      label: 'Kr. u. 8. század'
+    -
+      value: kr_u_9
+      label: 'Kr. u. 9. század'
+    -
+      value: kr_u_10
+      label: 'Kr. u. 10. század'
+    -
+      value: kr_u_11
+      label: 'Kr. u. 11. század'
+    -
+      value: kr_u_12
+      label: 'Kr. u. 12. század'
+    -
+      value: kr_u_13
+      label: 'Kr. u. 13. század'
+    -
+      value: kr_u_14
+      label: 'Kr. u. 14. század'
+    -
+      value: kr_u_15
+      label: 'Kr. u. 15. század'
+    -
+      value: kr_u_16
+      label: 'Kr. u. 16. század'
+    -
+      value: kr_u_17
+      label: 'Kr. u. 17. század'
+    -
+      value: kr_u_18
+      label: 'Kr. u. 18. század'
+    -
+      value: kr_u_19
+      label: 'Kr. u. 19. század'
+    -
+      value: kr_u_20
+      label: 'Kr. u. 20. század'
+    -
+      value: kr_u_21
+      label: 'Kr. u. 21. század'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
