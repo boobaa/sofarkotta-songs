@@ -15,13 +15,13 @@ settings:
       label: C-dúr
     -
       value: Cis/Des-dur
-      label: Cis/Des-dúr
+      label: C#/Db-dúr
     -
       value: D-dur
       label: D-dúr
     -
       value: Dis/Es-dur
-      label: Dis/Es-dúr
+      label: D#/Eb-dúr
     -
       value: E-dur
       label: E-dúr
@@ -30,13 +30,13 @@ settings:
       label: F-dúr
     -
       value: Fis/Ges-dur
-      label: Fis/Ges-dúr
+      label: F#/Gb-dúr
     -
       value: G-dur
       label: G-dúr
     -
       value: Gis/As-dur
-      label: Gis/As-dúr
+      label: G#/Ab-dúr
     -
       value: A-dur
       label: A-dúr
@@ -51,13 +51,13 @@ settings:
       label: C-moll
     -
       value: Cis/Des-moll
-      label: Cis/Des-moll
+      label: C#/Db-moll
     -
       value: D-moll
       label: D-moll
     -
       value: Dis/Es-moll
-      label: Dis/Es-moll
+      label: D#/Eb-moll
     -
       value: E-moll
       label: E-moll
@@ -66,13 +66,13 @@ settings:
       label: F-moll
     -
       value: Fis/Ges-moll
-      label: Fis/Ges-moll
+      label: F#/Gb-moll
     -
       value: G-moll
       label: G-moll
     -
       value: Gis/As-moll
-      label: Gis/As-moll
+      label: G#/Ab-moll
     -
       value: A-moll
       label: A-moll
@@ -87,13 +87,13 @@ settings:
       label: C-dór
     -
       value: Cis/Des-dor
-      label: Cis/Des-dór
+      label: C#/Db-dór
     -
       value: D-dor
       label: D-dór
     -
       value: Dis/Es-dor
-      label: Dis/Es-dór
+      label: D#/Eb-dór
     -
       value: E-dor
       label: E-dór
@@ -102,13 +102,13 @@ settings:
       label: F-dór
     -
       value: Fis/Ges-dor
-      label: Fis/Ges-dór
+      label: F#/Gb-dór
     -
       value: G-dor
       label: G-dór
     -
       value: Gis/As-dor
-      label: Gis/As-dór
+      label: G#/Ab-dór
     -
       value: A-dor
       label: A-dór
@@ -123,13 +123,13 @@ settings:
       label: C-fríg
     -
       value: Cis/Des-frig
-      label: Cis/Des-fríg
+      label: C#/Db-fríg
     -
       value: D-frig
       label: D-fríg
     -
       value: Dis/Es-frig
-      label: Dis/Es-fríg
+      label: D#/Eb-fríg
     -
       value: E-frig
       label: E-fríg
@@ -138,13 +138,13 @@ settings:
       label: F-fríg
     -
       value: Fis/Ges-frig
-      label: Fis/Ges-fríg
+      label: F#/Gb-fríg
     -
       value: G-frig
       label: G-fríg
     -
       value: Gis/As-frig
-      label: Gis/As-fríg
+      label: G#/Ab-fríg
     -
       value: A-frig
       label: A-fríg
@@ -159,13 +159,13 @@ settings:
       label: C-líd
     -
       value: Cis/Des-lid
-      label: Cis/Des-líd
+      label: C#/Db-líd
     -
       value: D-lid
       label: D-líd
     -
       value: Dis/Es-lid
-      label: Dis/Es-líd
+      label: D#/Eb-líd
     -
       value: E-lid
       label: E-líd
@@ -174,13 +174,13 @@ settings:
       label: F-líd
     -
       value: Fis/Ges-lid
-      label: Fis/Ges-líd
+      label: F#/Gb-líd
     -
       value: G-lid
       label: G-líd
     -
       value: Gis/As-lid
-      label: Gis/As-líd
+      label: G#/Ab-líd
     -
       value: A-lid
       label: A-líd
@@ -195,13 +195,13 @@ settings:
       label: C-mixolíd
     -
       value: Cis/Des-mixolid
-      label: Cis/Des-mixolíd
+      label: C#/Db-mixolíd
     -
       value: D-mixolid
       label: D-mixolíd
     -
       value: Dis/Es-mixolid
-      label: Dis/Es-mixolíd
+      label: D#/Eb-mixolíd
     -
       value: E-mixolid
       label: E-mixolíd
@@ -210,13 +210,13 @@ settings:
       label: F-mixolíd
     -
       value: Fis/Ges-mixolid
-      label: Fis/Ges-mixolíd
+      label: F#/Gb-mixolíd
     -
       value: G-mixolid
       label: G-mixolíd
     -
       value: Gis/As-mixolid
-      label: Gis/As-mixolíd
+      label: G#/Ab-mixolíd
     -
       value: A-mixolid
       label: A-mixolíd
@@ -231,13 +231,13 @@ settings:
       label: 'C-harmonikus moll'
     -
       value: Cis/Des-harmonikus_moll
-      label: 'Cis/Des-harmonikus moll'
+      label: 'C#/Db-harmonikus moll'
     -
       value: D-harmonikus_moll
       label: 'D-harmonikus moll'
     -
       value: Dis/Es-harmonikus_moll
-      label: 'Dis/Es-harmonikus moll'
+      label: 'D#/Eb-harmonikus moll'
     -
       value: E-harmonikus_moll
       label: 'E-harmonikus moll'
@@ -246,13 +246,13 @@ settings:
       label: 'F-harmonikus moll'
     -
       value: Fis/Ges-harmonikus_moll
-      label: 'Fis/Ges-harmonikus moll'
+      label: 'F#/Gb-harmonikus moll'
     -
       value: G-harmonikus_moll
       label: 'G-harmonikus moll'
     -
       value: Gis/As-harmonikus_moll
-      label: 'Gis/As-harmonikus moll'
+      label: 'G#/Ab-harmonikus moll'
     -
       value: A-harmonikus_moll
       label: 'A-harmonikus moll'
@@ -267,7 +267,7 @@ settings:
       label: 'C-harmonikus moll IV'
     -
       value: Cis/Des-harmonikus_moll_iv
-      label: 'Cis/Des-harmonikus moll IV'
+      label: 'C#/Db-harmonikus moll IV'
     -
       value: D-harmonikus_moll_iv
       label: 'D-harmonikus moll IV'
@@ -282,13 +282,13 @@ settings:
       label: 'F-harmonikus moll IV'
     -
       value: Fis/Ges-harmonikus_moll_iv
-      label: 'Fis/Ges-harmonikus moll IV'
+      label: 'F#/Gb-harmonikus moll IV'
     -
       value: G-harmonikus_moll_iv
       label: 'G-harmonikus moll IV'
     -
       value: Gis/As-harmonikus_moll_iv
-      label: 'Gis/As-harmonikus moll IV'
+      label: 'G#/Ab-harmonikus moll IV'
     -
       value: A-harmonikus_moll_iv
       label: 'A-harmonikus moll IV'
@@ -303,13 +303,13 @@ settings:
       label: 'C-harmonikus moll V'
     -
       value: Cis/Des-harmonikus_moll_v
-      label: 'Cis/Des-harmonikus moll V'
+      label: 'C#/Db-harmonikus moll V'
     -
       value: D-harmonikus_moll_v
       label: 'D-harmonikus moll V'
     -
       value: Dis/Es-harmonikus_moll_v
-      label: 'Dis/Es-harmonikus moll V'
+      label: 'D#/Eb-harmonikus moll V'
     -
       value: E-harmonikus_moll_v
       label: 'E-harmonikus moll V'
@@ -318,13 +318,13 @@ settings:
       label: 'F-harmonikus moll V'
     -
       value: Fis/Ges-harmonikus_moll_v
-      label: 'Fis/Ges-harmonikus moll V'
+      label: 'F#/Gb-harmonikus moll V'
     -
       value: G-harmonikus_moll_v
       label: 'G-harmonikus moll V'
     -
       value: Gis/As-harmonikus_moll_v
-      label: 'Gis/As-harmonikus moll V'
+      label: 'G#/Ab-harmonikus moll V'
     -
       value: A-harmonikus_moll_v
       label: 'A-harmonikus moll V'
@@ -339,13 +339,13 @@ settings:
       label: 'C-magyar moll'
     -
       value: Cis/Des-magyar_moll
-      label: 'Cis/Des-magyar moll'
+      label: 'C#/Db-magyar moll'
     -
       value: D-magyar_moll
       label: 'D-magyar moll'
     -
       value: Dis/Es-magyar_moll
-      label: 'Dis/Es-magyar moll'
+      label: 'D#/Eb-magyar moll'
     -
       value: E-magyar_moll
       label: 'E-magyar moll'
@@ -354,13 +354,13 @@ settings:
       label: 'F-magyar moll'
     -
       value: Fis/Ges-magyar_moll
-      label: 'Fis/Ges-magyar moll'
+      label: 'F#/Gb-magyar moll'
     -
       value: G-magyar_moll
       label: 'G-magyar moll'
     -
       value: Gis/As-magyar_moll
-      label: 'Gis/As-magyar moll'
+      label: 'G#/Ab-magyar moll'
     -
       value: A-magyar_moll
       label: 'A-magyar moll'
@@ -375,13 +375,13 @@ settings:
       label: C-eol
     -
       value: Cis/Des-eol
-      label: Cis/Des-eol
+      label: C#/Db-eol
     -
       value: D-eol
       label: D-eol
     -
       value: Dis/Es-eol
-      label: Dis/Es-eol
+      label: D#/Eb-eol
     -
       value: E-eol
       label: E-eol
@@ -390,13 +390,13 @@ settings:
       label: F-eol
     -
       value: Fis/Ges-eol
-      label: Fis/Ges-eol
+      label: F#/Gb-eol
     -
       value: G-eol
       label: G-eol
     -
       value: Gis/As-eol
-      label: Gis/As-eol
+      label: G#/Ab-eol
     -
       value: A-eol
       label: A-eol
@@ -411,13 +411,13 @@ settings:
       label: C-lokriszi
     -
       value: Cis/Des-lokriszi
-      label: Cis/Des-lokriszi
+      label: C#/Db-lokriszi
     -
       value: D-lokriszi
       label: D-lokriszi
     -
       value: Dis/Es-lokriszi
-      label: Dis/Es-lokriszi
+      label: D#/Eb-lokriszi
     -
       value: E-lokriszi
       label: E-lokriszi
@@ -426,13 +426,13 @@ settings:
       label: F-lokriszi
     -
       value: Fis/Ges-lokriszi
-      label: Fis/Ges-lokriszi
+      label: F#/Gb-lokriszi
     -
       value: G-lokriszi
       label: G-lokriszi
     -
       value: Gis/As-lokriszi
-      label: Gis/As-lokriszi
+      label: G#/Ab-lokriszi
     -
       value: A-lokriszi
       label: A-lokriszi

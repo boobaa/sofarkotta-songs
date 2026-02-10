@@ -1,10 +1,10 @@
 ## Installing
 
-- Start with a Drupal 10 or Drupal 11 site.
+- Start with a Drupal 11 site.
 - Install whatever profile you like.
 - Apply the recipe.
 
-The recipe can be applied with PHP in Drupal 10.3+.
+The recipe can be applied with PHP in Drupal 11+.
 
 Execute this command from the web root:
 
