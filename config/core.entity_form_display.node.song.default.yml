@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.song.field_bible_ref
     - field.field.node.song.field_composer
     - field.field.node.song.field_content_tags
+    - field.field.node.song.field_dynamics
     - field.field.node.song.field_editorial_notes
     - field.field.node.song.field_genre
     - field.field.node.song.field_holiday
@@ -61,6 +62,7 @@ third_party_settings:
     group_musical_features:
       children:
         - field_tempo
+        - field_dynamics
         - field_ambitus
         - field_key
         - field_genre
@@ -166,6 +168,12 @@ content:
   field_content_tags:
     type: options_buttons
     weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_dynamics:
+    type: options_buttons
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
