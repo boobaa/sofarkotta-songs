@@ -184,7 +184,7 @@ content:
     region: content
   field_source:
     type: file_default
-    label: above
+    label: inline
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }

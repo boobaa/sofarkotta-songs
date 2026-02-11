@@ -20,7 +20,7 @@ settings:
   handler: 'default:file'
   handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'msc mscz mxml xml ly'
+  file_extensions: 'msc mscz mxml xml ly musx mus mxl musicxml mid midi'
   max_filesize: ''
   description_field: false
 field_type: file
