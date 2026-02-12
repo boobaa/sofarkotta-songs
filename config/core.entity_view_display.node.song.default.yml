@@ -23,7 +23,6 @@ dependencies:
     - field.field.node.song.field_sofar
     - field.field.node.song.field_source
     - field.field.node.song.field_svg
-    - field.field.node.song.field_tempo
     - field.field.node.song.field_time
     - field.field.node.song.field_title_original
     - field.field.node.song.field_translator
@@ -43,14 +42,14 @@ content:
   content_moderation_control:
     settings: {  }
     third_party_settings: {  }
-    weight: 27
+    weight: 26
     region: content
   field_ambitus:
     type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 16
+    weight: 15
     region: content
   field_bible_ref:
     type: string
@@ -58,7 +57,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 22
+    weight: 21
     region: content
   field_composer:
     type: string
@@ -73,21 +72,21 @@ content:
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 19
+    weight: 18
     region: content
   field_dynamics:
     type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 15
+    weight: 14
     region: content
   field_editorial_notes:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 26
+    weight: 25
     region: content
   field_first_line:
     type: string
@@ -95,28 +94,28 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 29
+    weight: 28
     region: content
   field_genre:
     type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 18
+    weight: 17
     region: content
   field_holiday:
     type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 20
+    weight: 19
     region: content
   field_key:
     type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 17
+    weight: 16
     region: content
   field_language:
     type: list_default
@@ -135,14 +134,14 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 25
+    weight: 24
     region: content
   field_liturgical_role:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 21
+    weight: 20
     region: content
   field_lyricist:
     type: string
@@ -181,14 +180,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 24
+    weight: 23
     region: content
   field_sofar:
     type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 23
+    weight: 22
     region: content
   field_source:
     type: file_default
@@ -205,13 +204,6 @@ content:
       use_description_as_link_text: true
     third_party_settings: {  }
     weight: 11
-    region: content
-  field_tempo:
-    type: list_default
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    weight: 14
     region: content
   field_time:
     type: list_default
@@ -256,7 +248,7 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 28
+    weight: 27
     region: content
 hidden:
   ai_automator_status: true
