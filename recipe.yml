@@ -47,3 +47,4 @@ config:
     - field.storage.node.field_time
     - field.storage.node.field_dynamics
     - field.storage.node.field_instruments
+    - field.storage.node.field_other_features

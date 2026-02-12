@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.song.field_liturgical_role
     - field.field.node.song.field_lyricist
     - field.field.node.song.field_opensong
+    - field.field.node.song.field_other_features
     - field.field.node.song.field_pdf
     - field.field.node.song.field_presentation
     - field.field.node.song.field_ref_songbook
@@ -43,7 +44,7 @@ content:
   content_moderation_control:
     settings: {  }
     third_party_settings: {  }
-    weight: 27
+    weight: 28
     region: content
   field_ambitus:
     type: list_default
@@ -58,7 +59,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 22
+    weight: 23
     region: content
   field_composer:
     type: string
@@ -73,7 +74,7 @@ content:
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 19
+    weight: 20
     region: content
   field_dynamics:
     type: list_default
@@ -87,7 +88,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 26
+    weight: 27
     region: content
   field_first_line:
     type: string
@@ -95,7 +96,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 29
+    weight: 30
     region: content
   field_genre:
     type: list_default
@@ -109,7 +110,7 @@ content:
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 20
+    weight: 21
     region: content
   field_instruments:
     type: list_default
@@ -142,14 +143,14 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 25
+    weight: 26
     region: content
   field_liturgical_role:
     type: list_default
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 21
+    weight: 22
     region: content
   field_lyricist:
     type: string
@@ -165,6 +166,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 12
+    region: content
+  field_other_features:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 19
     region: content
   field_pdf:
     type: file_default
@@ -188,14 +196,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 24
+    weight: 25
     region: content
   field_sofar:
     type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 23
+    weight: 24
     region: content
   field_source:
     type: file_default
@@ -256,7 +264,7 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 28
+    weight: 29
     region: content
 hidden:
   ai_automator_status: true

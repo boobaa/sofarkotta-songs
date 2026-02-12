@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.song.field_liturgical_role
     - field.field.node.song.field_lyricist
     - field.field.node.song.field_opensong
+    - field.field.node.song.field_other_features
     - field.field.node.song.field_pdf
     - field.field.node.song.field_presentation
     - field.field.node.song.field_ref_songbook
@@ -66,6 +67,7 @@ third_party_settings:
         - field_key
         - field_genre
         - field_instruments
+        - field_other_features
       label: 'Zenei jellemzők'
       region: content
       parent_name: ''
@@ -244,6 +246,23 @@ content:
     settings:
       rows: 20
       placeholder: ''
+    third_party_settings: {  }
+  field_other_features:
+    type: multiselect_dropdown
+    weight: 8
+    region: content
+    settings:
+      label_aria: 'Toggle the list of items'
+      label_none: '0 elem kiválasztva'
+      label_all: 'Minden elem kiválasztva'
+      label_single: '%d elem kiválasztva'
+      label_plural: '%d elem kiválasztva'
+      label_select_all: ''
+      label_select_none: ''
+      search_title: ''
+      search_title_display: ''
+      search_placeholder: ''
+      search_character_threshold: null
     third_party_settings: {  }
   field_pdf:
     type: file_generic
