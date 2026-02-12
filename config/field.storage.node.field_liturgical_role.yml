@@ -26,6 +26,9 @@ settings:
       value: keresztelo
       label: keresztelő
     -
+      value: rafelelo
+      label: ráfelelő
+    -
       value: urvacsora
       label: úrvacsora
     -
