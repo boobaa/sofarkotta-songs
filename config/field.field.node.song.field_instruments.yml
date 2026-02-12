@@ -1,0 +1,20 @@
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instruments
+    - node.type.song
+  module:
+    - options
+id: node.song.field_instruments
+field_name: field_instruments
+entity_type: node
+bundle: song
+label: 'Jellegzetes kísérő hangszerek'
+description: 'Ha van közismert szóló rész, azt milyen hangszer játssza?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

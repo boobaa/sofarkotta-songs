@@ -9,6 +9,7 @@ dependencies:
     - field.storage.node.field_dynamics
     - field.storage.node.field_genre
     - field.storage.node.field_holiday
+    - field.storage.node.field_instruments
     - field.storage.node.field_key
     - field.storage.node.field_language
     - field.storage.node.field_link
@@ -1077,6 +1078,68 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_instruments:
+          id: field_instruments
+          table: node__field_instruments
+          field: field_instruments
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ','
+          field_api_classes: false
         field_link:
           id: field_link
           table: node__field_link
@@ -2064,6 +2127,9 @@ display:
             field_bible_ref:
               alias: bible_ref
               raw_output: false
+            field_instruments:
+              alias: instruments
+              raw_output: false
             field_link:
               alias: link
               raw_output: false
@@ -2144,6 +2210,7 @@ display:
         - 'config:field.storage.node.field_dynamics'
         - 'config:field.storage.node.field_genre'
         - 'config:field.storage.node.field_holiday'
+        - 'config:field.storage.node.field_instruments'
         - 'config:field.storage.node.field_key'
         - 'config:field.storage.node.field_language'
         - 'config:field.storage.node.field_link'

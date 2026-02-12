@@ -39,9 +39,11 @@ config:
     - field.storage.node.field_year
     - field.storage.node.field_genre
     - field.storage.node.field_editorial_notes
-    - field.storage.node.field_tempo
     - field.storage.node.field_sofar
     - field.storage.node.field_composer
     - field.storage.node.field_presentation
     - field.storage.node.field_translator
     - field.storage.node.field_bible_ref
+    - field.storage.node.field_time
+    - field.storage.node.field_dynamics
+    - field.storage.node.field_instruments
