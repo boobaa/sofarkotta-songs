@@ -2,12 +2,8 @@ langcode: hu
 status: true
 dependencies:
   module:
-    - field_permissions
     - node
     - options
-third_party_settings:
-  field_permissions:
-    permission_type: public
 id: node.field_holiday
 field_name: field_holiday
 entity_type: node
@@ -15,8 +11,17 @@ type: list_string
 settings:
   allowed_values:
     -
+      value: Újév
+      label: Újév
+    -
       value: Böjt
-      label: Böjt
+      label: Nagyböjt
+    -
+      value: Nagypéntek
+      label: Nagypéntek
+    -
+      value: Virágvasárnap
+      label: Virágvasárnap
     -
       value: Húsvét
       label: Húsvét
@@ -32,6 +37,15 @@ settings:
     -
       value: Karácsony
       label: Karácsony
+    -
+      value: Keresztelés
+      label: Keresztelés/bemerítés
+    -
+      value: Esküvő
+      label: Esküvő
+    -
+      value: Temetés
+      label: Temetés
   allowed_values_function: ''
 module: options
 locked: false

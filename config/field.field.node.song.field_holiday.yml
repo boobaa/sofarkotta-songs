@@ -10,7 +10,7 @@ id: node.song.field_holiday
 field_name: field_holiday
 entity_type: node
 bundle: song
-label: Ünnep
+label: Ünnepek/alkalmak
 description: 'Kapcsolódó ünnepkör / esemény.'
 required: false
 translatable: false
