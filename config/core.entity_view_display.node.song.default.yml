@@ -3,19 +3,20 @@ status: true
 dependencies:
   config:
     - field.field.node.song.ai_automator_status
-    - field.field.node.song.field_ambitus
     - field.field.node.song.field_bible_ref
     - field.field.node.song.field_composer
     - field.field.node.song.field_content_tags
     - field.field.node.song.field_dynamics
     - field.field.node.song.field_editorial_notes
     - field.field.node.song.field_genre
+    - field.field.node.song.field_highest_note
     - field.field.node.song.field_holiday
     - field.field.node.song.field_instruments
     - field.field.node.song.field_key
     - field.field.node.song.field_language
     - field.field.node.song.field_link
     - field.field.node.song.field_liturgical_role
+    - field.field.node.song.field_lowest_note
     - field.field.node.song.field_lyricist
     - field.field.node.song.field_opensong
     - field.field.node.song.field_other_features
@@ -44,14 +45,7 @@ content:
   content_moderation_control:
     settings: {  }
     third_party_settings: {  }
-    weight: 28
-    region: content
-  field_ambitus:
-    type: list_default
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    weight: 15
+    weight: 30
     region: content
   field_bible_ref:
     type: string
@@ -59,7 +53,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 23
+    weight: 25
     region: content
   field_composer:
     type: string
@@ -74,7 +68,7 @@ content:
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 20
+    weight: 22
     region: content
   field_dynamics:
     type: list_default
@@ -88,7 +82,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 27
+    weight: 29
     region: content
   field_first_line:
     type: string
@@ -96,9 +90,16 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 30
+    weight: 32
     region: content
   field_genre:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  field_highest_note:
     type: list_default
     label: inline
     settings: {  }
@@ -110,21 +111,21 @@ content:
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 21
+    weight: 23
     region: content
   field_instruments:
     type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 18
+    weight: 20
     region: content
   field_key:
     type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 16
+    weight: 18
     region: content
   field_language:
     type: list_default
@@ -143,14 +144,21 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 26
+    weight: 28
     region: content
   field_liturgical_role:
     type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 22
+    weight: 24
+    region: content
+  field_lowest_note:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 16
     region: content
   field_lyricist:
     type: string
@@ -172,7 +180,7 @@ content:
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 19
+    weight: 21
     region: content
   field_pdf:
     type: file_default
@@ -196,14 +204,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 25
+    weight: 27
     region: content
   field_sofar:
     type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 24
+    weight: 26
     region: content
   field_source:
     type: file_default
@@ -264,7 +272,7 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 29
+    weight: 31
     region: content
 hidden:
   ai_automator_status: true

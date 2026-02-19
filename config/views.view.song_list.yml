@@ -2,17 +2,18 @@ langcode: hu
 status: true
 dependencies:
   config:
-    - field.storage.node.field_ambitus
     - field.storage.node.field_bible_ref
     - field.storage.node.field_composer
     - field.storage.node.field_content_tags
     - field.storage.node.field_dynamics
     - field.storage.node.field_genre
+    - field.storage.node.field_highest_note
     - field.storage.node.field_holiday
     - field.storage.node.field_instruments
     - field.storage.node.field_key
     - field.storage.node.field_language
     - field.storage.node.field_link
+    - field.storage.node.field_lowest_note
     - field.storage.node.field_lyricist
     - field.storage.node.field_other_features
     - field.storage.node.field_pdf
@@ -1038,19 +1039,81 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_ambitus:
-          id: field_ambitus
-          table: node__field_ambitus
-          field: field_ambitus
+        field_lowest_note:
+          id: field_lowest_note
+          table: node__field_lowest_note
+          field: field_lowest_note
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: Hangterjedelem
+          label: 'Legmélyebb hang a kottában'
           exclude: true
           alter:
             alter_text: true
-            text: ' <span title="Hangterjedelem">{{ field_ambitus }}</span>'
+            text: ' <span title="Legmélyebb hang a kottában">{{ field_lowest_note }}</span>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_highest_note:
+          id: field_highest_note
+          table: node__field_highest_note
+          field: field_highest_note
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'Legmagasabb hang a kottában'
+          exclude: true
+          alter:
+            alter_text: true
+            text: ' <span title="Legmagasabb hang a kottában">{{ field_highest_note }}</span>'
             make_link: false
             path: ''
             absolute: false
@@ -1360,7 +1423,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ field_dynamics }}{{ field_ambitus }}{{ field_key }}{{ field_genre }}{{ field_instruments }}{{ field_other_features }}'
+            text: '{{ field_dynamics }}{{ field_lowest_note }}{{ field_highest_note }}{{ field_key }}{{ field_genre }}{{ field_instruments }}{{ field_other_features }}'
             make_link: false
             path: ''
             absolute: false
@@ -2226,46 +2289,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-        field_ambitus_value:
-          id: field_ambitus_value
-          table: node__field_ambitus
-          field: field_ambitus_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: list_field
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_ambitus_value_op
-            label: Hangterjedelem
-            description: ''
-            use_operator: false
-            operator: field_ambitus_value_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ambitus
-            required: false
-            remember: true
-            multiple: true
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
         field_key_value:
           id: field_key_value
           table: node__field_key
@@ -2493,9 +2516,12 @@ display:
             field_time: field_time
             nothing_1: nothing_1
             field_dynamics: field_dynamics
-            field_ambitus: field_ambitus
+            field_lowest_note: field_lowest_note
+            field_highest_note: field_highest_note
             field_key: field_key
             field_genre: field_genre
+            field_instruments: field_instruments
+            field_other_features: field_other_features
             nothing_2: nothing_2
             field_content_tags: field_content_tags
             field_holiday: field_holiday
@@ -2615,7 +2641,14 @@ display:
               separator: ''
               empty_column: false
               responsive: priority-low
-            field_ambitus:
+            field_lowest_note:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-low
+            field_highest_note:
               sortable: false
               default_sort_order: asc
               align: ''
@@ -2628,6 +2661,16 @@ display:
               empty_column: false
               responsive: priority-low
             field_genre:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-low
+            field_instruments:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-low
+            field_other_features:
               align: ''
               separator: ''
               empty_column: false
@@ -2726,17 +2769,18 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_ambitus'
         - 'config:field.storage.node.field_bible_ref'
         - 'config:field.storage.node.field_composer'
         - 'config:field.storage.node.field_content_tags'
         - 'config:field.storage.node.field_dynamics'
         - 'config:field.storage.node.field_genre'
+        - 'config:field.storage.node.field_highest_note'
         - 'config:field.storage.node.field_holiday'
         - 'config:field.storage.node.field_instruments'
         - 'config:field.storage.node.field_key'
         - 'config:field.storage.node.field_language'
         - 'config:field.storage.node.field_link'
+        - 'config:field.storage.node.field_lowest_note'
         - 'config:field.storage.node.field_lyricist'
         - 'config:field.storage.node.field_other_features'
         - 'config:field.storage.node.field_pdf'
@@ -2777,17 +2821,18 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_ambitus'
         - 'config:field.storage.node.field_bible_ref'
         - 'config:field.storage.node.field_composer'
         - 'config:field.storage.node.field_content_tags'
         - 'config:field.storage.node.field_dynamics'
         - 'config:field.storage.node.field_genre'
+        - 'config:field.storage.node.field_highest_note'
         - 'config:field.storage.node.field_holiday'
         - 'config:field.storage.node.field_instruments'
         - 'config:field.storage.node.field_key'
         - 'config:field.storage.node.field_language'
         - 'config:field.storage.node.field_link'
+        - 'config:field.storage.node.field_lowest_note'
         - 'config:field.storage.node.field_lyricist'
         - 'config:field.storage.node.field_other_features'
         - 'config:field.storage.node.field_pdf'

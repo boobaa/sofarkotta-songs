@@ -2,19 +2,19 @@ langcode: hu
 status: true
 dependencies:
   config:
-    - field.storage.node.field_ambitus
+    - field.storage.node.field_highest_note
     - node.type.song
   module:
     - options
-id: node.song.field_ambitus
-field_name: field_ambitus
+id: node.song.field_highest_note
+field_name: field_highest_note
 entity_type: node
 bundle: song
-label: Hangterjedelem
-description: 'Ének hangterjedelme legfeljebb.'
+label: 'Legmagasabb hang a kottában'
+description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_float
+field_type: list_string

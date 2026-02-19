@@ -1,0 +1,239 @@
+langcode: hu
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_highest_note
+field_name: field_highest_note
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: a0
+      label: A0
+    -
+      value: ais_b0
+      label: 'A#/B0'
+    -
+      value: h0
+      label: H0
+    -
+      value: c1
+      label: C1
+    -
+      value: cis_des1
+      label: 'C#/Db1'
+    -
+      value: d1
+      label: D1
+    -
+      value: dis_es1
+      label: 'D#/Eb1'
+    -
+      value: e1
+      label: E1
+    -
+      value: f1
+      label: F1
+    -
+      value: fis_ges1
+      label: 'F#/Gb1'
+    -
+      value: g1
+      label: G1
+    -
+      value: gis_as1
+      label: 'G#/Ab1'
+    -
+      value: a1
+      label: A1
+    -
+      value: ais_b1
+      label: 'A#/B1'
+    -
+      value: h1
+      label: H1
+    -
+      value: c2
+      label: C2
+    -
+      value: cis_des2
+      label: 'C#/Db2'
+    -
+      value: d2
+      label: D2
+    -
+      value: dis_es2
+      label: 'D#/Eb2'
+    -
+      value: e2
+      label: E2
+    -
+      value: f2
+      label: F2
+    -
+      value: fis_ges2
+      label: 'F#/Gb2'
+    -
+      value: g2
+      label: G2
+    -
+      value: gis_as2
+      label: 'G#/Ab2'
+    -
+      value: a2
+      label: A2
+    -
+      value: ais_b2
+      label: 'A#/B2'
+    -
+      value: h2
+      label: H2
+    -
+      value: c3
+      label: C3
+    -
+      value: cis_des3
+      label: 'C#/Db3'
+    -
+      value: d3
+      label: D3
+    -
+      value: dis_es3
+      label: 'D#/Eb3'
+    -
+      value: e3
+      label: E3
+    -
+      value: f3
+      label: F3
+    -
+      value: fis_ges3
+      label: 'F#/Gb3'
+    -
+      value: g3
+      label: G3
+    -
+      value: gis_as3
+      label: 'G#/Ab3'
+    -
+      value: a3
+      label: A3
+    -
+      value: ais_b3
+      label: 'A#/B3'
+    -
+      value: h3
+      label: H3
+    -
+      value: c4
+      label: C4
+    -
+      value: cis_des4
+      label: 'C#/Db4'
+    -
+      value: d4
+      label: D4
+    -
+      value: dis_es4
+      label: 'D#/Eb4'
+    -
+      value: e4
+      label: E4
+    -
+      value: f4
+      label: F4
+    -
+      value: fis_ges4
+      label: 'F#/Gb4'
+    -
+      value: g4
+      label: G4
+    -
+      value: gis_as4
+      label: 'G#/Ab4'
+    -
+      value: a4
+      label: A4
+    -
+      value: ais_b4
+      label: 'A#/B4'
+    -
+      value: h4
+      label: H4
+    -
+      value: c5
+      label: C5
+    -
+      value: cis_des5
+      label: 'C#/Db5'
+    -
+      value: d5
+      label: D5
+    -
+      value: dis_es5
+      label: 'D#/Eb5'
+    -
+      value: e5
+      label: E5
+    -
+      value: f5
+      label: F5
+    -
+      value: fis_ges5
+      label: 'F#/Gb5'
+    -
+      value: g5
+      label: G5
+    -
+      value: gis_as5
+      label: 'G#/Ab5'
+    -
+      value: a5
+      label: A5
+    -
+      value: ais_b5
+      label: 'A#/B5'
+    -
+      value: h5
+      label: H5
+    -
+      value: c6
+      label: C6
+    -
+      value: cis_des6
+      label: 'C#/Db6'
+    -
+      value: d6
+      label: D6
+    -
+      value: dis_es6
+      label: 'D#/Eb6'
+    -
+      value: e6
+      label: E6
+    -
+      value: f6
+      label: F6
+    -
+      value: fis_ges6
+      label: 'F#/Gb6'
+    -
+      value: g6
+      label: G6
+    -
+      value: gis_as6
+      label: 'G#/Ab6'
+    -
+      value: a6
+      label: A6
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
