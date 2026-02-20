@@ -27,6 +27,7 @@ dependencies:
     - field.field.node.song.field_source
     - field.field.node.song.field_svg
     - field.field.node.song.field_time
+    - field.field.node.song.field_time_signature
     - field.field.node.song.field_title_original
     - field.field.node.song.field_translator
     - field.field.node.song.field_variation_of
@@ -104,7 +105,7 @@ content:
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 17
+    weight: 16
     region: content
   field_holiday:
     type: list_default
@@ -125,7 +126,7 @@ content:
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 18
+    weight: 17
     region: content
   field_language:
     type: list_default
@@ -158,7 +159,7 @@ content:
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 16
+    weight: 15
     region: content
   field_lyricist:
     type: string
@@ -235,6 +236,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 7
+    region: content
+  field_time_signature:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 18
     region: content
   field_title_original:
     type: string

@@ -27,6 +27,7 @@ dependencies:
     - field.field.node.song.field_source
     - field.field.node.song.field_svg
     - field.field.node.song.field_time
+    - field.field.node.song.field_time_signature
     - field.field.node.song.field_title_original
     - field.field.node.song.field_translator
     - field.field.node.song.field_variation_of
@@ -66,6 +67,7 @@ third_party_settings:
         - field_dynamics
         - group_ambitus
         - field_key
+        - field_time_signature
         - field_genre
         - field_instruments
         - field_other_features
@@ -142,7 +144,7 @@ third_party_settings:
       label: Hangterjedelem
       region: content
       parent_name: group_musical_features
-      weight: 5
+      weight: 4
       format_type: fieldset
       format_settings:
         classes: ''
@@ -334,6 +336,12 @@ content:
   field_time:
     type: options_select
     weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_time_signature:
+    type: options_buttons
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -22,6 +22,7 @@ dependencies:
     - field.storage.node.field_source
     - field.storage.node.field_svg
     - field.storage.node.field_time
+    - field.storage.node.field_time_signature
     - field.storage.node.field_title_original
     - field.storage.node.field_translator
     - field.storage.node.field_variation_of
@@ -1225,6 +1226,68 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_time_signature:
+          id: field_time_signature
+          table: node__field_time_signature
+          field: field_time_signature
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: Ütemmutató/lüktetés
+          exclude: true
+          alter:
+            alter_text: true
+            text: ' <span title="Ütemmutató/lüktetés">{{ field_time_signature }}</span>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         field_genre:
           id: field_genre
           table: node__field_genre
@@ -1423,7 +1486,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ field_dynamics }}{{ field_lowest_note }}{{ field_highest_note }}{{ field_key }}{{ field_genre }}{{ field_instruments }}{{ field_other_features }}'
+            text: '{{ field_dynamics }}{{ field_lowest_note }}{{ field_highest_note }}{{ field_key }}{{ field_time_signature }}{{ field_genre }}{{ field_instruments }}{{ field_other_features }}'
             make_link: false
             path: ''
             absolute: false
@@ -2329,6 +2392,46 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: true
+        field_time_signature_value:
+          id: field_time_signature_value
+          table: node__field_time_signature
+          field: field_time_signature_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: list_field
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_time_signature_value_op
+            label: Ütemmutató/lüktetés
+            description: ''
+            use_operator: false
+            operator: field_time_signature_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: time_signature
+            required: false
+            remember: true
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
         field_genre_value:
           id: field_genre_value
           table: node__field_genre
@@ -2519,6 +2622,7 @@ display:
             field_lowest_note: field_lowest_note
             field_highest_note: field_highest_note
             field_key: field_key
+            field_time_signature: field_time_signature
             field_genre: field_genre
             field_instruments: field_instruments
             field_other_features: field_other_features
@@ -2660,6 +2764,11 @@ display:
               separator: ''
               empty_column: false
               responsive: priority-low
+            field_time_signature:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-low
             field_genre:
               align: ''
               separator: ''
@@ -2789,6 +2898,7 @@ display:
         - 'config:field.storage.node.field_source'
         - 'config:field.storage.node.field_svg'
         - 'config:field.storage.node.field_time'
+        - 'config:field.storage.node.field_time_signature'
         - 'config:field.storage.node.field_title_original'
         - 'config:field.storage.node.field_translator'
         - 'config:field.storage.node.field_variation_of'
@@ -2841,6 +2951,7 @@ display:
         - 'config:field.storage.node.field_source'
         - 'config:field.storage.node.field_svg'
         - 'config:field.storage.node.field_time'
+        - 'config:field.storage.node.field_time_signature'
         - 'config:field.storage.node.field_title_original'
         - 'config:field.storage.node.field_translator'
         - 'config:field.storage.node.field_variation_of'

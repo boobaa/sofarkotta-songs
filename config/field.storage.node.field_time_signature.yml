@@ -1,0 +1,80 @@
+langcode: hu
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_time_signature
+field_name: field_time_signature
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '2_4'
+      label: 2/4
+    -
+      value: '3_4'
+      label: 3/4
+    -
+      value: '4_4'
+      label: 4/4
+    -
+      value: '5_4'
+      label: 5/4
+    -
+      value: '6_4'
+      label: 6/4
+    -
+      value: '7_4'
+      label: 7/4
+    -
+      value: '3_8'
+      label: 3/8
+    -
+      value: '4_8'
+      label: 4/8
+    -
+      value: '5_8'
+      label: 5/8
+    -
+      value: '6_8'
+      label: 6/8
+    -
+      value: '7_8'
+      label: 7/8
+    -
+      value: '8_8'
+      label: 8/8
+    -
+      value: '9_8'
+      label: 9/8
+    -
+      value: '10_8'
+      label: 10/8
+    -
+      value: '11_8'
+      label: 11/8
+    -
+      value: '12_8'
+      label: 12/8
+    -
+      value: '13_8'
+      label: 13/8
+    -
+      value: '14_8'
+      label: 14/8
+    -
+      value: '15_8'
+      label: 15/8
+    -
+      value: swing
+      label: Swing
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
