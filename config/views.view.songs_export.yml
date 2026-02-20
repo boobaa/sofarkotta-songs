@@ -3,6 +3,8 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_bible_ref
+    - field.storage.node.field_bpm
+    - field.storage.node.field_changing_bpm
     - field.storage.node.field_composer
     - field.storage.node.field_content_tags
     - field.storage.node.field_dynamics
@@ -452,6 +454,70 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_bpm:
+          id: field_bpm
+          table: node__field_bpm
+          field: field_bpm
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         title:
           id: title
           table: node_field_data
@@ -831,6 +897,68 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_other_features:
+          id: field_other_features
+          table: node__field_other_features
+          field: field_other_features
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ','
+          field_api_classes: false
         field_translator:
           id: field_translator
           table: node__field_translator
@@ -955,68 +1083,6 @@ display:
           delta_first_last: false
           multi_type: separator
           separator: ', '
-          field_api_classes: false
-        field_time_signature:
-          id: field_time_signature
-          table: node__field_time_signature
-          field: field_time_signature
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: list_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ','
           field_api_classes: false
         field_lowest_note:
           id: field_lowest_note
@@ -1209,68 +1275,6 @@ display:
           id: field_instruments
           table: node__field_instruments
           field: field_instruments
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: list_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ','
-          field_api_classes: false
-        field_other_features:
-          id: field_other_features
-          table: node__field_other_features
-          field: field_other_features
           relationship: none
           group_type: group
           admin_label: ''
@@ -2080,6 +2084,68 @@ display:
           multi_type: separator
           separator: ','
           field_api_classes: false
+        field_time_signature:
+          id: field_time_signature
+          table: node__field_time_signature
+          field: field_time_signature
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ','
+          field_api_classes: false
         uuid_1:
           id: uuid_1
           table: node
@@ -2135,6 +2201,71 @@ display:
           type: string
           settings:
             link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_changing_bpm:
+          id: field_changing_bpm
+          table: node__field_changing_bpm
+          field: field_changing_bpm
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: boolean
+          settings:
+            format: default
+            format_custom_false: ''
+            format_custom_true: ''
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -2286,6 +2417,9 @@ display:
             uuid:
               alias: ''
               raw_output: false
+            field_bpm:
+              alias: bpm
+              raw_output: false
             title:
               alias: ''
               raw_output: false
@@ -2304,14 +2438,14 @@ display:
             field_dynamics:
               alias: dynamics
               raw_output: false
+            field_other_features:
+              alias: other_features
+              raw_output: false
             field_translator:
               alias: translator
               raw_output: false
             field_key:
               alias: key
-              raw_output: false
-            field_time_signature:
-              alias: time_signature
               raw_output: false
             field_lowest_note:
               alias: lowest_note
@@ -2324,9 +2458,6 @@ display:
               raw_output: false
             field_instruments:
               alias: instruments
-              raw_output: false
-            field_other_features:
-              alias: other_features
               raw_output: false
             field_link:
               alias: link
@@ -2364,8 +2495,14 @@ display:
             field_holiday:
               alias: holiday
               raw_output: false
+            field_time_signature:
+              alias: time_signature
+              raw_output: false
             uuid_1:
               alias: variation_of
+              raw_output: false
+            field_changing_bpm:
+              alias: changing_bpm
               raw_output: false
             field_presentation:
               alias: presentation
@@ -2402,6 +2539,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_bible_ref'
+        - 'config:field.storage.node.field_bpm'
+        - 'config:field.storage.node.field_changing_bpm'
         - 'config:field.storage.node.field_composer'
         - 'config:field.storage.node.field_content_tags'
         - 'config:field.storage.node.field_dynamics'

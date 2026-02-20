@@ -4,6 +4,8 @@ dependencies:
   config:
     - field.field.node.song.ai_automator_status
     - field.field.node.song.field_bible_ref
+    - field.field.node.song.field_bpm
+    - field.field.node.song.field_changing_bpm
     - field.field.node.song.field_composer
     - field.field.node.song.field_content_tags
     - field.field.node.song.field_dynamics
@@ -46,7 +48,7 @@ content:
   content_moderation_control:
     settings: {  }
     third_party_settings: {  }
-    weight: 30
+    weight: 32
     region: content
   field_bible_ref:
     type: string
@@ -54,7 +56,26 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 25
+    weight: 27
+    region: content
+  field_bpm:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_changing_bpm:
+    type: boolean
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 19
     region: content
   field_composer:
     type: string
@@ -69,7 +90,7 @@ content:
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 22
+    weight: 24
     region: content
   field_dynamics:
     type: list_default
@@ -83,7 +104,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 29
+    weight: 31
     region: content
   field_first_line:
     type: string
@@ -91,14 +112,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 32
+    weight: 34
     region: content
   field_genre:
     type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 19
+    weight: 21
     region: content
   field_highest_note:
     type: list_default
@@ -112,14 +133,14 @@ content:
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 23
+    weight: 25
     region: content
   field_instruments:
     type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 20
+    weight: 22
     region: content
   field_key:
     type: list_default
@@ -145,14 +166,14 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 28
+    weight: 30
     region: content
   field_liturgical_role:
     type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 24
+    weight: 26
     region: content
   field_lowest_note:
     type: list_default
@@ -181,7 +202,7 @@ content:
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 21
+    weight: 23
     region: content
   field_pdf:
     type: file_default
@@ -205,14 +226,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 27
+    weight: 29
     region: content
   field_sofar:
     type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 26
+    weight: 28
     region: content
   field_source:
     type: file_default
@@ -280,7 +301,7 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 31
+    weight: 33
     region: content
 hidden:
   ai_automator_status: true

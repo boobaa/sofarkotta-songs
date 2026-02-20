@@ -1,0 +1,20 @@
+langcode: hu
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_changing_bpm
+    - node.type.song
+id: node.song.field_changing_bpm
+field_name: field_changing_bpm
+entity_type: node
+bundle: song
+label: 'Változó tempó'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Igen
+  off_label: Nem
+field_type: boolean

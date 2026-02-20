@@ -4,6 +4,8 @@ dependencies:
   config:
     - field.field.node.song.ai_automator_status
     - field.field.node.song.field_bible_ref
+    - field.field.node.song.field_bpm
+    - field.field.node.song.field_changing_bpm
     - field.field.node.song.field_composer
     - field.field.node.song.field_content_tags
     - field.field.node.song.field_dynamics
@@ -68,6 +70,8 @@ third_party_settings:
         - group_ambitus
         - field_key
         - field_time_signature
+        - field_changing_bpm
+        - field_bpm
         - field_genre
         - field_instruments
         - field_other_features
@@ -173,6 +177,20 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_bpm:
+    type: number
+    weight: 8
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_changing_bpm:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_composer:
     type: string_textfield
     weight: 4
@@ -203,7 +221,7 @@ content:
     third_party_settings: {  }
   field_genre:
     type: options_buttons
-    weight: 7
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -221,13 +239,13 @@ content:
     third_party_settings: {  }
   field_instruments:
     type: options_buttons
-    weight: 8
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   field_key:
     type: options_buttons
-    weight: 6
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -275,7 +293,7 @@ content:
     third_party_settings: {  }
   field_other_features:
     type: multiselect_dropdown
-    weight: 9
+    weight: 11
     region: content
     settings:
       label_aria: 'Toggle the list of items'
