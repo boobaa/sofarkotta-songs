@@ -2,15 +2,15 @@ langcode: hu
 status: true
 dependencies:
   config:
-    - field.storage.node.field_sofar
+    - field.storage.node.field_book
     - node.type.song
   module:
     - options
-id: node.song.field_sofar
-field_name: field_sofar
+id: node.song.field_book
+field_name: field_book
 entity_type: node
 bundle: song
-label: Sófár
+label: Kottafüzet
 description: 'Dicsőítő Iskola év/helyszín - ahol megjelent az ének.'
 required: false
 translatable: false

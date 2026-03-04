@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.node.song.ai_automator_status
     - field.field.node.song.field_bible_ref
+    - field.field.node.song.field_book
     - field.field.node.song.field_bpm
     - field.field.node.song.field_changing_bpm
     - field.field.node.song.field_composer
@@ -25,7 +26,6 @@ dependencies:
     - field.field.node.song.field_pdf
     - field.field.node.song.field_presentation
     - field.field.node.song.field_ref_songbook
-    - field.field.node.song.field_sofar
     - field.field.node.song.field_source
     - field.field.node.song.field_svg
     - field.field.node.song.field_time
@@ -57,6 +57,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 27
+    region: content
+  field_book:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 28
     region: content
   field_bpm:
     type: number_integer
@@ -227,13 +234,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 29
-    region: content
-  field_sofar:
-    type: list_default
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    weight: 28
     region: content
   field_source:
     type: file_default

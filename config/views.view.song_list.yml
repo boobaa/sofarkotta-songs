@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_bible_ref
+    - field.storage.node.field_book
     - field.storage.node.field_bpm
     - field.storage.node.field_changing_bpm
     - field.storage.node.field_composer
@@ -20,7 +21,6 @@ dependencies:
     - field.storage.node.field_other_features
     - field.storage.node.field_pdf
     - field.storage.node.field_ref_songbook
-    - field.storage.node.field_sofar
     - field.storage.node.field_source
     - field.storage.node.field_svg
     - field.storage.node.field_time
@@ -1890,10 +1890,10 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: false
-        field_sofar:
-          id: field_sofar
-          table: node__field_sofar
-          field: field_sofar
+        field_book:
+          id: field_book
+          table: node__field_book
+          field: field_book
           relationship: none
           group_type: group
           admin_label: ''
@@ -1902,7 +1902,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: ' <span title="Sófár">{{ field_sofar }}</span>'
+            text: ' <span title="Kottafüzet">{{ field_book }}</span>'
             make_link: false
             path: ''
             absolute: false
@@ -2094,7 +2094,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ field_sofar }}{{ field_ref_songbook }}{{ field_link }}'
+            text: '{{ field_book }}{{ field_ref_songbook }}{{ field_link }}'
             make_link: false
             path: ''
             absolute: false
@@ -2683,10 +2683,10 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-        field_sofar_value:
-          id: field_sofar_value
-          table: node__field_sofar
-          field: field_sofar_value
+        field_book_value:
+          id: field_book_value
+          table: node__field_book
+          field: field_book_value
           relationship: none
           group_type: group
           admin_label: ''
@@ -2696,14 +2696,14 @@ display:
           group: 1
           exposed: true
           expose:
-            operator_id: field_sofar_value_op
-            label: Sófár
+            operator_id: field_book_value_op
+            label: Kottafüzet
             description: ''
             use_operator: false
-            operator: field_sofar_value_op
+            operator: field_book_value_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: sofar
+            identifier: book
             required: false
             remember: true
             multiple: true
@@ -2764,7 +2764,7 @@ display:
             field_holiday: field_holiday
             field_bible_ref: field_bible_ref
             nothing_3: nothing_3
-            field_sofar: field_sofar
+            field_book: field_book
             field_ref_songbook: field_ref_songbook
             field_link: field_link
             nothing_4: nothing_4
@@ -2958,7 +2958,7 @@ display:
               separator: ''
               empty_column: false
               responsive: priority-medium
-            field_sofar:
+            field_book:
               align: ''
               separator: ''
               empty_column: false
@@ -3026,6 +3026,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_bible_ref'
+        - 'config:field.storage.node.field_book'
         - 'config:field.storage.node.field_bpm'
         - 'config:field.storage.node.field_changing_bpm'
         - 'config:field.storage.node.field_composer'
@@ -3043,7 +3044,6 @@ display:
         - 'config:field.storage.node.field_other_features'
         - 'config:field.storage.node.field_pdf'
         - 'config:field.storage.node.field_ref_songbook'
-        - 'config:field.storage.node.field_sofar'
         - 'config:field.storage.node.field_source'
         - 'config:field.storage.node.field_svg'
         - 'config:field.storage.node.field_time'
@@ -3081,6 +3081,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_bible_ref'
+        - 'config:field.storage.node.field_book'
         - 'config:field.storage.node.field_bpm'
         - 'config:field.storage.node.field_changing_bpm'
         - 'config:field.storage.node.field_composer'
@@ -3098,7 +3099,6 @@ display:
         - 'config:field.storage.node.field_other_features'
         - 'config:field.storage.node.field_pdf'
         - 'config:field.storage.node.field_ref_songbook'
-        - 'config:field.storage.node.field_sofar'
         - 'config:field.storage.node.field_source'
         - 'config:field.storage.node.field_svg'
         - 'config:field.storage.node.field_time'

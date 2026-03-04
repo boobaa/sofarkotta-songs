@@ -29,3 +29,6 @@ all the recipe configuration and customization has been applied.
 
 You might want to place the `more_variations` ("További variációk") block in the content region,
 below the content block, for the `song` node type pages.
+
+Feel free to change/extend the allowed values for books ("Kottafüzet") by
+visiting `/admin/structure/types/manage/song/fields/node.song.field_book`.

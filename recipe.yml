@@ -24,7 +24,8 @@ config:
     - field.storage.node.field_pdf
     - field.storage.node.field_lyricist
     - field.storage.node.field_source
-    - field.storage.node.field_ambitus
+    - field.storage.node.field_lowest_note
+    - field.storage.node.field_highest_note
     - field.storage.node.field_svg
     - field.storage.node.field_variation_of
     - field.storage.node.field_holiday
@@ -38,13 +39,16 @@ config:
     - field.storage.node.field_key
     - field.storage.node.field_year
     - field.storage.node.field_genre
+    - field.storage.node.field_changing_bpm
+    - field.storage.node.field_bpm
     - field.storage.node.field_editorial_notes
-    - field.storage.node.field_sofar
+    - field.storage.node.field_book
     - field.storage.node.field_composer
     - field.storage.node.field_presentation
     - field.storage.node.field_translator
     - field.storage.node.field_bible_ref
     - field.storage.node.field_time
+    - field.storage.node.field_time_signature
     - field.storage.node.field_dynamics
     - field.storage.node.field_instruments
     - field.storage.node.field_other_features

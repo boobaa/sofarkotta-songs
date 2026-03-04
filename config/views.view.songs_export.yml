@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_bible_ref
+    - field.storage.node.field_book
     - field.storage.node.field_bpm
     - field.storage.node.field_changing_bpm
     - field.storage.node.field_composer
@@ -23,7 +24,6 @@ dependencies:
     - field.storage.node.field_pdf
     - field.storage.node.field_presentation
     - field.storage.node.field_ref_songbook
-    - field.storage.node.field_sofar
     - field.storage.node.field_svg
     - field.storage.node.field_time
     - field.storage.node.field_time_signature
@@ -1898,10 +1898,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_sofar:
-          id: field_sofar
-          table: node__field_sofar
-          field: field_sofar
+        field_book:
+          id: field_book
+          table: node__field_book
+          field: field_book
           relationship: none
           group_type: group
           admin_label: ''
@@ -2486,8 +2486,8 @@ display:
             field_lyricist:
               alias: lyricist
               raw_output: false
-            field_sofar:
-              alias: sofar
+            field_book:
+              alias: book
               raw_output: false
             field_content_tags:
               alias: content_tags
@@ -2539,6 +2539,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_bible_ref'
+        - 'config:field.storage.node.field_book'
         - 'config:field.storage.node.field_bpm'
         - 'config:field.storage.node.field_changing_bpm'
         - 'config:field.storage.node.field_composer'
@@ -2559,7 +2560,6 @@ display:
         - 'config:field.storage.node.field_pdf'
         - 'config:field.storage.node.field_presentation'
         - 'config:field.storage.node.field_ref_songbook'
-        - 'config:field.storage.node.field_sofar'
         - 'config:field.storage.node.field_svg'
         - 'config:field.storage.node.field_time'
         - 'config:field.storage.node.field_time_signature'

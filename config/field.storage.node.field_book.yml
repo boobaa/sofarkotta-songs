@@ -4,8 +4,8 @@ dependencies:
   module:
     - node
     - options
-id: node.field_sofar
-field_name: field_sofar
+id: node.field_book
+field_name: field_book
 entity_type: node
 type: list_string
 settings:
@@ -64,6 +64,9 @@ settings:
     -
       value: '2025'
       label: '2025 - Bonyhád'
+    -
+      value: '2026'
+      label: '2026 - Bonyhád'
   allowed_values_function: ''
 module: options
 locked: false
