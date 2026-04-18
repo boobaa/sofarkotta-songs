@@ -113,14 +113,6 @@ content:
     third_party_settings: {  }
     weight: 31
     region: content
-  field_first_line:
-    type: string
-    label: inline
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 34
-    region: content
   field_genre:
     type: list_default
     label: inline

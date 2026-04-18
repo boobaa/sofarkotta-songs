@@ -12,34 +12,34 @@ settings:
   allowed_values:
     -
       value: kr_e_10
-      label: 'Kr. e. 10. évezred'
+      label: 'Kr. e. 10. század'
     -
       value: kr_e_9
-      label: 'Kr. e. 9. évezred'
+      label: 'Kr. e. 9. század'
     -
       value: kr_e_8
-      label: 'Kr. e. 8. évezred'
+      label: 'Kr. e. 8. század'
     -
       value: kr_e_7
-      label: 'Kr. e. 7. évezred'
+      label: 'Kr. e. 7. század'
     -
       value: kr_e_6
-      label: 'Kr. e. 6. évezred'
+      label: 'Kr. e. 6. század'
     -
       value: kr_e_5
-      label: 'Kr. e. 5. évezred'
+      label: 'Kr. e. 5. század'
     -
       value: kr_e_4
-      label: 'Kr. e. 4. évezred'
+      label: 'Kr. e. 4. század'
     -
       value: kr_e_3
-      label: 'Kr. e. 3. évezred'
+      label: 'Kr. e. 3. század'
     -
       value: kr_e_2
-      label: 'Kr. e. 2. évezred'
+      label: 'Kr. e. 2. század'
     -
       value: kr_e_1
-      label: 'Kr. e. 1. évezred'
+      label: 'Kr. e. 1. század'
     -
       value: kr_u_1
       label: 'Kr. u. 1. század'
