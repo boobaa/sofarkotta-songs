@@ -2,16 +2,16 @@ langcode: hu
 status: true
 dependencies:
   config:
-    - field.storage.node.field_content_tags
+    - field.storage.node.field_lyrics_format
     - node.type.song
   module:
     - options
-id: node.song.field_content_tags
-field_name: field_content_tags
+id: node.song.field_lyrics_format
+field_name: field_lyrics_format
 entity_type: node
 bundle: song
-label: Tartalomcímkék
-description: ""
+label: 'Dalszöveg formátuma'
+description: ''
 required: false
 translatable: false
 default_value: {  }

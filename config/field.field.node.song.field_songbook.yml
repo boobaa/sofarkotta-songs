@@ -2,13 +2,13 @@ langcode: hu
 status: true
 dependencies:
   config:
-    - field.storage.node.field_ref_songbook
+    - field.storage.node.field_songbook
     - node.type.song
-id: node.song.field_ref_songbook
-field_name: field_ref_songbook
+id: node.song.field_songbook
+field_name: field_songbook
 entity_type: node
 bundle: song
-label: 'Református énekeskönyv'
+label: 'Énekeskönyvi számozás'
 description: 'Ének szám - református énekeskönyvi ének esetén. Használd a <a href="https://enekeskonyv.reformatus.hu/digitalis-reformatus-enekeskonyv/" target="_blank">reformatus.hu kereső</a>jét!'
 required: false
 translatable: false

@@ -21,11 +21,12 @@ dependencies:
     - field.field.node.song.field_liturgical_role
     - field.field.node.song.field_lowest_note
     - field.field.node.song.field_lyricist
-    - field.field.node.song.field_opensong
+    - field.field.node.song.field_lyrics
+    - field.field.node.song.field_lyrics_format
     - field.field.node.song.field_other_features
     - field.field.node.song.field_pdf
     - field.field.node.song.field_presentation
-    - field.field.node.song.field_ref_songbook
+    - field.field.node.song.field_songbook
     - field.field.node.song.field_source
     - field.field.node.song.field_svg
     - field.field.node.song.field_time
@@ -189,12 +190,19 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
-  field_opensong:
+  field_lyrics:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
     weight: 12
+    region: content
+  field_lyrics_format:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
     region: content
   field_other_features:
     type: list_default
@@ -209,7 +217,7 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 10
+    weight: 9
     region: content
   field_presentation:
     type: string
@@ -219,7 +227,7 @@ content:
     third_party_settings: {  }
     weight: 13
     region: content
-  field_ref_songbook:
+  field_songbook:
     type: string
     label: inline
     settings:
@@ -233,7 +241,7 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 9
+    weight: 8
     region: content
   field_svg:
     type: file_default
@@ -241,7 +249,7 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 11
+    weight: 10
     region: content
   field_time:
     type: list_default

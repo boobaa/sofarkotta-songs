@@ -9,6 +9,7 @@ install:
   - node
   - options
   - rest
+  - rest_views
   - serialization
   - text
   - user

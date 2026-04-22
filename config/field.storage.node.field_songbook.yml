@@ -3,8 +3,8 @@ status: true
 dependencies:
   module:
     - node
-id: node.field_ref_songbook
-field_name: field_ref_songbook
+id: node.field_songbook
+field_name: field_songbook
 entity_type: node
 type: string
 settings:

@@ -20,7 +20,7 @@ dependencies:
     - field.storage.node.field_lyricist
     - field.storage.node.field_other_features
     - field.storage.node.field_pdf
-    - field.storage.node.field_ref_songbook
+    - field.storage.node.field_songbook
     - field.storage.node.field_source
     - field.storage.node.field_svg
     - field.storage.node.field_time
@@ -1952,19 +1952,19 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_ref_songbook:
-          id: field_ref_songbook
-          table: node__field_ref_songbook
-          field: field_ref_songbook
+        field_songbook:
+          id: field_songbook
+          table: node__field_songbook
+          field: field_songbook
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Református énekeskönyv'
+          label: 'Énekeskönyvi számozás'
           exclude: true
           alter:
             alter_text: true
-            text: ' <span title="Református énekeskönyv">{{ field_ref_songbook }}</span>'
+            text: ' <span title="Énekeskönyvi számozás">{{ field_songbook }}</span>'
             make_link: false
             path: ''
             absolute: false
@@ -2094,7 +2094,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ field_book }}{{ field_ref_songbook }}{{ field_link }}'
+            text: '{{ field_book }}{{ field_songbook }}{{ field_link }}'
             make_link: false
             path: ''
             absolute: false
@@ -2402,7 +2402,7 @@ display:
             field_lyricist: field_lyricist
             field_translator: field_translator
             field_bible_ref: field_bible_ref
-            field_ref_songbook: field_ref_songbook
+            field_songbook: field_songbook
         field_language_value:
           id: field_language_value
           table: node__field_language
@@ -2765,7 +2765,7 @@ display:
             field_bible_ref: field_bible_ref
             nothing_3: nothing_3
             field_book: field_book
-            field_ref_songbook: field_ref_songbook
+            field_songbook: field_songbook
             field_link: field_link
             nothing_4: nothing_4
             operations: operations
@@ -2963,7 +2963,7 @@ display:
               separator: ''
               empty_column: false
               responsive: priority-low
-            field_ref_songbook:
+            field_songbook:
               sortable: false
               default_sort_order: asc
               align: ''
@@ -3043,7 +3043,7 @@ display:
         - 'config:field.storage.node.field_lyricist'
         - 'config:field.storage.node.field_other_features'
         - 'config:field.storage.node.field_pdf'
-        - 'config:field.storage.node.field_ref_songbook'
+        - 'config:field.storage.node.field_songbook'
         - 'config:field.storage.node.field_source'
         - 'config:field.storage.node.field_svg'
         - 'config:field.storage.node.field_time'
@@ -3098,7 +3098,7 @@ display:
         - 'config:field.storage.node.field_lyricist'
         - 'config:field.storage.node.field_other_features'
         - 'config:field.storage.node.field_pdf'
-        - 'config:field.storage.node.field_ref_songbook'
+        - 'config:field.storage.node.field_songbook'
         - 'config:field.storage.node.field_source'
         - 'config:field.storage.node.field_svg'
         - 'config:field.storage.node.field_time'

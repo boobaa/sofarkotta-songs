@@ -19,11 +19,12 @@ dependencies:
     - field.storage.node.field_liturgical_role
     - field.storage.node.field_lowest_note
     - field.storage.node.field_lyricist
-    - field.storage.node.field_opensong
+    - field.storage.node.field_lyrics
+    - field.storage.node.field_lyrics_format
     - field.storage.node.field_other_features
     - field.storage.node.field_pdf
     - field.storage.node.field_presentation
-    - field.storage.node.field_ref_songbook
+    - field.storage.node.field_songbook
     - field.storage.node.field_svg
     - field.storage.node.field_time
     - field.storage.node.field_time_signature
@@ -37,6 +38,7 @@ dependencies:
     - node
     - options
     - rest
+    - rest_views
     - serialization
     - user
 id: songs_export
@@ -341,9 +343,9 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  rest_export_1:
-    id: rest_export_1
-    display_title: 'REST export: lista'
+  rest_export_list_v2:
+    id: rest_export_list_v2
+    display_title: 'REST export: lista v2'
     display_plugin: rest_export
     position: 1
     display_options:
@@ -371,7 +373,7 @@ display:
         row: false
       display_description: ''
       display_extenders: {  }
-      path: api/songs
+      path: api/v2/songs
     cache_metadata:
       max-age: -1
       contexts:
@@ -382,9 +384,9 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  rest_export_2:
-    id: rest_export_2
-    display_title: 'REST export: dal'
+  rest_export_song_v2:
+    id: rest_export_song_v2
+    display_title: 'REST export: dal v2'
     display_plugin: rest_export
     position: 2
     display_options:
@@ -897,14 +899,14 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_other_features:
-          id: field_other_features
+        field_other_features_export:
+          id: field_other_features_export
           table: node__field_other_features
-          field: field_other_features
+          field: field_other_features_export
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
+          plugin_id: field_export
           label: ''
           exclude: false
           alter:
@@ -956,8 +958,6 @@ display:
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
-          multi_type: separator
-          separator: ','
           field_api_classes: false
         field_translator:
           id: field_translator
@@ -1022,14 +1022,14 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_key:
-          id: field_key
+        field_key_export:
+          id: field_key_export
           table: node__field_key
-          field: field_key
+          field: field_key_export
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
+          plugin_id: field_export
           label: ''
           exclude: false
           alter:
@@ -1081,8 +1081,6 @@ display:
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
-          multi_type: separator
-          separator: ', '
           field_api_classes: false
         field_lowest_note:
           id: field_lowest_note
@@ -1271,14 +1269,14 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_instruments:
-          id: field_instruments
+        field_instruments_export:
+          id: field_instruments_export
           table: node__field_instruments
-          field: field_instruments
+          field: field_instruments_export
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
+          plugin_id: field_export
           label: ''
           exclude: false
           alter:
@@ -1330,17 +1328,15 @@ display:
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
-          multi_type: separator
-          separator: ','
           field_api_classes: false
-        field_link:
-          id: field_link
+        field_link_export:
+          id: field_link_export
           table: node__field_link
-          field: field_link
+          field: field_link_export
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
+          plugin_id: field_export
           label: ''
           exclude: false
           alter:
@@ -1397,17 +1393,15 @@ display:
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
-          multi_type: separator
-          separator: ','
           field_api_classes: false
-        field_liturgical_role:
-          id: field_liturgical_role
+        field_liturgical_role_export:
+          id: field_liturgical_role_export
           table: node__field_liturgical_role
-          field: field_liturgical_role
+          field: field_liturgical_role_export
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
+          plugin_id: field_export
           label: ''
           exclude: false
           alter:
@@ -1459,8 +1453,6 @@ display:
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
-          multi_type: separator
-          separator: ','
           field_api_classes: false
         field_language:
           id: field_language
@@ -1524,10 +1516,72 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_opensong:
-          id: field_opensong
-          table: node__field_opensong
-          field: field_opensong
+        field_lyrics_format:
+          id: field_lyrics_format
+          table: node__field_lyrics_format
+          field: field_lyrics_format
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_key
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_lyrics:
+          id: field_lyrics
+          table: node__field_lyrics
+          field: field_lyrics
           relationship: none
           group_type: group
           admin_label: ''
@@ -1648,10 +1702,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_ref_songbook:
-          id: field_ref_songbook
-          table: node__field_ref_songbook
-          field: field_ref_songbook
+        field_songbook:
+          id: field_songbook
+          table: node__field_songbook
+          field: field_songbook
           relationship: none
           group_type: group
           admin_label: ''
@@ -1711,14 +1765,14 @@ display:
           multi_type: separator
           separator: ','
           field_api_classes: false
-        field_genre:
-          id: field_genre
+        field_genre_export:
+          id: field_genre_export
           table: node__field_genre
-          field: field_genre
+          field: field_genre_export
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
+          plugin_id: field_export
           label: ''
           exclude: false
           alter:
@@ -1770,8 +1824,6 @@ display:
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
-          multi_type: separator
-          separator: ','
           field_api_classes: false
         field_svg:
           id: field_svg
@@ -1898,14 +1950,14 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_book:
-          id: field_book
+        field_book_export:
+          id: field_book_export
           table: node__field_book
-          field: field_book
+          field: field_book_export
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
+          plugin_id: field_export
           label: ''
           exclude: false
           alter:
@@ -1957,17 +2009,15 @@ display:
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
-          multi_type: separator
-          separator: ','
           field_api_classes: false
-        field_content_tags:
-          id: field_content_tags
+        field_content_tags_export:
+          id: field_content_tags_export
           table: node__field_content_tags
-          field: field_content_tags
+          field: field_content_tags_export
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
+          plugin_id: field_export
           label: ''
           exclude: false
           alter:
@@ -2019,17 +2069,15 @@ display:
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
-          multi_type: separator
-          separator: ','
           field_api_classes: false
-        field_holiday:
-          id: field_holiday
+        field_holiday_export:
+          id: field_holiday_export
           table: node__field_holiday
-          field: field_holiday
+          field: field_holiday_export
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
+          plugin_id: field_export
           label: ''
           exclude: false
           alter:
@@ -2081,17 +2129,15 @@ display:
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
-          multi_type: separator
-          separator: ','
           field_api_classes: false
-        field_time_signature:
-          id: field_time_signature
+        field_time_signature_export:
+          id: field_time_signature_export
           table: node__field_time_signature
-          field: field_time_signature
+          field: field_time_signature_export
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
+          plugin_id: field_export
           label: ''
           exclude: false
           alter:
@@ -2143,8 +2189,6 @@ display:
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
-          multi_type: separator
-          separator: ','
           field_api_classes: false
         uuid_1:
           id: uuid_1
@@ -2438,13 +2482,13 @@ display:
             field_dynamics:
               alias: dynamics
               raw_output: false
-            field_other_features:
+            field_other_features_export:
               alias: other_features
               raw_output: false
             field_translator:
               alias: translator
               raw_output: false
-            field_key:
+            field_key_export:
               alias: key
               raw_output: false
             field_lowest_note:
@@ -2456,28 +2500,31 @@ display:
             field_bible_ref:
               alias: bible_ref
               raw_output: false
-            field_instruments:
+            field_instruments_export:
               alias: instruments
               raw_output: false
-            field_link:
+            field_link_export:
               alias: link
               raw_output: false
-            field_liturgical_role:
+            field_liturgical_role_export:
               alias: liturgical_role
               raw_output: false
             field_language:
               alias: language
               raw_output: false
-            field_opensong:
-              alias: opensong
+            field_lyrics_format:
+              alias: lyrics_format
+              raw_output: false
+            field_lyrics:
+              alias: lyrics
               raw_output: false
             field_pdf:
               alias: pdf
               raw_output: false
-            field_ref_songbook:
-              alias: ref_songbook
+            field_songbook:
+              alias: songbook
               raw_output: false
-            field_genre:
+            field_genre_export:
               alias: genre
               raw_output: false
             field_svg:
@@ -2486,16 +2533,16 @@ display:
             field_lyricist:
               alias: lyricist
               raw_output: false
-            field_book:
+            field_book_export:
               alias: book
               raw_output: false
-            field_content_tags:
+            field_content_tags_export:
               alias: content_tags
               raw_output: false
-            field_holiday:
+            field_holiday_export:
               alias: holiday
               raw_output: false
-            field_time_signature:
+            field_time_signature_export:
               alias: time_signature
               raw_output: false
             uuid_1:
@@ -2527,7 +2574,7 @@ display:
           required: false
       display_description: ''
       display_extenders: {  }
-      path: api/song/%
+      path: api/v2/song/%
     cache_metadata:
       max-age: -1
       contexts:
@@ -2555,11 +2602,12 @@ display:
         - 'config:field.storage.node.field_liturgical_role'
         - 'config:field.storage.node.field_lowest_note'
         - 'config:field.storage.node.field_lyricist'
-        - 'config:field.storage.node.field_opensong'
+        - 'config:field.storage.node.field_lyrics'
+        - 'config:field.storage.node.field_lyrics_format'
         - 'config:field.storage.node.field_other_features'
         - 'config:field.storage.node.field_pdf'
         - 'config:field.storage.node.field_presentation'
-        - 'config:field.storage.node.field_ref_songbook'
+        - 'config:field.storage.node.field_songbook'
         - 'config:field.storage.node.field_svg'
         - 'config:field.storage.node.field_time'
         - 'config:field.storage.node.field_time_signature'
